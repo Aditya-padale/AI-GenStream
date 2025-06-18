@@ -1,28 +1,10 @@
-# ✅ Streamlit Compatible Environment
-streamlit>=1.32.0
-python-dotenv
-Pillow
+streamlit
 python-magic
-
-# LangChain & Gemini
-langchain-core
+python-dotenv
+langchain
 langchain-google-genai
-google-api-python-client
-google-auth
-
-# AI Libraries (Compatible with Python 3.13)
-torch==2.7.1
-transformers==4.40.0
-diffusers[torch]==0.27.2
-safetensors
-huggingface_hub
-accelerate
-
-# Optional: Safety checker and helpers
-opencv-python-headless
-scikit-image
-scipy
-ftfy
-regex
-tqdm
-sentencepiece
+PyPDF2
+python-docx
+requests
+Pillow
+yt-dlp
