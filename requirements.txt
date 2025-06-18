@@ -1,34 +1,34 @@
-# Core dependencies
-streamlit
-python-magic
+# Core
+streamlit>=1.32.0
 python-dotenv
 Pillow
-torch
-transformers
-safetensors
-uuid
-base64
+python-magic-bin; sys_platform == 'win32'
+python-magic; sys_platform != 'win32'
 
-# LangChain and Gemini integration
+# LangChain + Gemini
 langchain-core
 langchain-google-genai
 google-api-python-client
+google-auth
 
-# AnimateDiff and diffusers
-diffusers[torch]  # includes AnimateDiffPipeline and others
-huggingface_hub
-
-# Safety checker components
-scipy
-accelerate
+# Image & video processing
 opencv-python-headless
 scikit-image
 
-# For image feature extraction
+# Torch and Diffusers
+torch==2.1.0
+transformers==4.40.0
+diffusers[torch]==0.27.2
+safetensors
+huggingface_hub
+accelerate
+
+# For safety checker
+scipy
 ftfy
-regex
 tqdm
 sentencepiece
+regex
 
-# Optional but often required for some HuggingFace models
-protobuf<4.0
+# Needed for file handling and mime types
+filetype
