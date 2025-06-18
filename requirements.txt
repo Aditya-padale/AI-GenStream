@@ -1,34 +1,28 @@
-# Core
+# ✅ Streamlit Compatible Environment
 streamlit>=1.32.0
 python-dotenv
 Pillow
-python-magic-bin; sys_platform == 'win32'
-python-magic; sys_platform != 'win32'
+python-magic
 
-# LangChain + Gemini
+# LangChain & Gemini
 langchain-core
 langchain-google-genai
 google-api-python-client
 google-auth
 
-# Image & video processing
-opencv-python-headless
-scikit-image
-
-# Torch and Diffusers
-torch==2.1.0
+# AI Libraries (Compatible with Python 3.13)
+torch==2.7.1
 transformers==4.40.0
 diffusers[torch]==0.27.2
 safetensors
 huggingface_hub
 accelerate
 
-# For safety checker
+# Optional: Safety checker and helpers
+opencv-python-headless
+scikit-image
 scipy
 ftfy
+regex
 tqdm
 sentencepiece
-regex
-
-# Needed for file handling and mime types
-filetype
