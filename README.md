@@ -35,8 +35,8 @@ Powered by **Google Gemini** models via LangChain, this app lets you interact wi
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/multimodal-ai-playground.git
-cd multimodal-ai-playground
+git clone https://github.com/Aditya-padale/AI-GenStream.git
+cd AI-GenStream
 
 # 2. Set up environment
 python -m venv venv
